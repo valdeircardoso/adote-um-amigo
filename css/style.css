@@ -1,0 +1,28 @@
+ :root { --green: #236b50; --green-dark: #174b39; --cream: #f5f7f1; --orange: #f0b35a; }
+* { box-sizing: border-box; }
+body { color: #24332c; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+.site-nav { background: var(--green-dark); }
+.navbar-brand { letter-spacing: .2px; }
+.hero { color: white; background: linear-gradient(120deg, rgba(23,75,57,.97), rgba(35,107,80,.9)); }
+.eyebrow { color: #d08a2f; font-size: .78rem; font-weight: 800; letter-spacing: .12em; }
+.hero .eyebrow { color: #ffd58e; }
+.hero h1 { max-width: 720px; }
+.hero-paw { font-size: clamp(4rem, 10vw, 8rem); background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2); border-radius: 2rem; padding: 1.5rem; }
+.filters { min-width: min(100%, 360px); }
+.animal-card { border: 0; border-radius: 1rem; overflow: hidden; box-shadow: 0 8px 24px rgba(26,55,41,.09); transition: transform .2s ease, box-shadow .2s ease; }
+.animal-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(26,55,41,.14); }
+.animal-art { min-height: 160px; display: grid; place-items: center; font-size: 5rem; background: #e9f1e8; }
+.animal-art.cat { background: #f9eee1; }
+.card-title { color: var(--green-dark); }
+.tag { display: inline-block; background: #e6f1e9; color: var(--green-dark); padding: .25rem .65rem; border-radius: 2rem; font-size: .8rem; font-weight: 700; }
+.btn-adopt { background: var(--green); color: white; border: 0; }
+.btn-adopt:hover, .btn-adopt:focus { background: var(--green-dark); color: white; }
+.how-section { background: var(--cream); }
+.step-card { padding: 1.5rem; background: white; border-radius: 1rem; border: 1px solid #e5e9e2; }
+.step-card span { display: inline-grid; place-items: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--orange); font-weight: 800; margin-bottom: 1rem; }
+.step-card h3 { font-size: 1.2rem; font-weight: 750; }
+.step-card p { color: #637067; margin-bottom: 0; }
+.about-box { background: #f5f7f1; border-radius: 1rem; padding: clamp(1.5rem, 4vw, 3rem); }
+.about-box p { max-width: 850px; color: #526158; }
+.site-footer { background: var(--green-dark); color: white; }
+@media (max-width: 575.98px) { .hero .container { padding-top: 3rem !important; padding-bottom: 3rem !important; } .hero-paw { padding: 1rem; } .filters { width: 100%; } }
